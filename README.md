@@ -2,6 +2,9 @@
 
 ## For Each
 
+### When to use?
+**When you need to execute a function on each element in an array and CANNOT use another method**
+
 - Loops over each element in an array
 - nothing is returned, is used to **execute a function on each element**
 
@@ -11,10 +14,7 @@ array.forEach(function(i){
   console.log(i);
 });
 ```
-
-### When to use?
-**When you need to execute a function on each element in an array and CANNOT use another method**
-
+---
 ## Map
 
 The `map()` method is used to apply a function on every element in an array. A new array is then returned.
@@ -41,7 +41,9 @@ let newArr = arr.map((v,i,a) => {
 });
 
 ```
+What does newArr look like?
 
+---
 ## Filter
 
 The `filter()` method returns a new array created from all elements that pass a certain test preformed on an original array.
@@ -80,12 +82,14 @@ let data = [
   }
 ]
 
-let newArr = arr.map((v,i,a) => {
+let newArr = data.map((v,i,a) => {
   return v.population > 500000000
 });
 
 ```
+What does newArr look like?
 
+---
 ## Reduce
 
 The `reduce()` method is used to apply a function to each element in the array to reduce the array to a single value (which could be a string/number/object).
@@ -109,12 +113,15 @@ eg:
 ```js 
 let arr = [1,2,3,4];
 
-let sum = arr.reduce((acc, val) => {
-  return acc + val;
-}, 0);
+let value = arr.reduce((acc, val) => {
+  return acc - val;
+}, 100);
 
 ```
+What is the value?
 
+
+---
 ### Challenge pt 1
 Using the reduce() method, can we convert this array of countries and populations to an object, where each key is the country name, and the value is the population?
 
