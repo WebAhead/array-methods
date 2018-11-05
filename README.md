@@ -140,7 +140,7 @@ Using `Object.keys()` (look it up :D) and one of the other array methods, do the
 
 ### When to use?
 **When you need to execute a function on each element in an array and CANNOT use another method**
-Normally one of the other methods will do for manipulating objects. forEach is more commonly used if you want to do something external to your JS - eg: creating DOM nodes, making requests.
+Normally one of the other methods will do for manipulating arrays/data. forEach is more commonly used if you want to do something external to your JS - eg: creating DOM nodes, making requests.
 
 - Loops over each element in an array
 - nothing is returned, is used to **execute a function on each element**
