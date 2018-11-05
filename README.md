@@ -1,20 +1,5 @@
-# .forEach(), .map(), .filter(), .reduce()
+# .map(), .filter(), .reduce(), .forEach()
 
-## For Each
-
-### When to use?
-**When you need to execute a function on each element in an array and CANNOT use another method**
-
-- Loops over each element in an array
-- nothing is returned, is used to **execute a function on each element**
-
-```js
-var array = [1,2,3];
-array.forEach(function(i){
-  console.log(i);
-});
-```
----
 ## Map
 
 The `map()` method is used to apply a function on every element in an array. A new array is then returned.
@@ -148,3 +133,21 @@ let data = [
 
 ### Challenge pt 2
 Using `Object.keys()` (look it up :D) and one of the other array methods, do the reverse of challenge 1. That is, convert your object of countries into an array that looks like `data` above.
+
+---
+
+## For Each
+
+### When to use?
+**When you need to execute a function on each element in an array and CANNOT use another method**
+Normally one of the other methods will do for manipulating objects. forEach is more commonly used if you want to do something external to your JS - eg: creating DOM nodes, making requests.
+
+- Loops over each element in an array
+- nothing is returned, is used to **execute a function on each element**
+
+```js
+var array = [1,2,3];
+array.forEach(function(i){
+  console.log(i);
+});
+```
