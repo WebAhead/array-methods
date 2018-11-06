@@ -89,7 +89,7 @@ This time the callback function takes 4 arguments, the **accumulator** as well a
 As well as the callback as with forEach,map & filter, reduce also takes an initial value for the accumulator. If you do not pass an initial value the 0th element of the array is used.
 
 ```js
-let newArr = oldArr.filter((acc, val, index, arr) => {
+let newArr = oldArr.reduce((acc, val, index, arr) => {
   // return the new value of the accumulator
 }, initValue);
 ```
