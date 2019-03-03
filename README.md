@@ -9,7 +9,7 @@ The `map()` method is used to apply a function on every element in an array. A n
 
 ### Syntax
 ```js
-let newArr = oldArr.map((val, index, arr) => {
+let newArr = oldArr.map(function(val, index, arr) {
   // return element to new Array
 });
 ```
@@ -17,7 +17,7 @@ let newArr = oldArr.map((val, index, arr) => {
 eg:
 ```js 
 let arr = [1,2,3,4]
-let newArr = arr.map((v,i,a) => {
+let newArr = arr.map(function(v,i,a) {
   if (v % 2 === 0){
     return v * 2;
   } else {
@@ -38,7 +38,7 @@ The `filter()` method returns a new array created from all elements that pass a 
 
 ### Syntax
 ```js
-let newArr = oldArr.filter((val, index, arr) => {
+let newArr = oldArr.filter(function(val, index, arr) {
   return // expression that evaluates to true or false
   // function should return true or false
   // true means keep the element
@@ -67,7 +67,7 @@ let data = [
   }
 ]
 
-let newArr = data.map((v,i,a) => {
+let newArr = data.map(function(v,i,a) {
   return v.population > 500000000
 });
 
@@ -89,7 +89,7 @@ This time the callback function takes 4 arguments, the **accumulator** as well a
 As well as the callback as with forEach,map & filter, reduce also takes an initial value for the accumulator. If you do not pass an initial value the 0th element of the array is used.
 
 ```js
-let newArr = oldArr.reduce((acc, val, index, arr) => {
+let newArr = oldArr.reduce(function(acc, val, index, arr) {
   // return the new value of the accumulator
 }, initValue);
 ```
@@ -98,7 +98,7 @@ eg:
 ```js 
 let arr = [1,2,3,4];
 
-let value = arr.reduce((acc, val) => {
+let value = arr.reduce(function(acc, val) {
   return acc - val;
 }, 100);
 
