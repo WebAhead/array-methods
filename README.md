@@ -5,7 +5,7 @@
 The `map()` method is used to apply a function on every element in an array. A new array is then returned.
 
 ### When to use?
-**When you want to *transform* elements in an array**
+**When you want to *transform* elements in an array** without missing with the original array.
 
 ### Syntax
 ```js
