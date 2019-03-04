@@ -77,7 +77,7 @@ What does newArr look like?
 ---
 ## Reduce
 
-The `reduce()` method is used to apply a function to each element in the array to reduce the array to a single value (which could be a string/number/object).
+The `reduce()` method is used to apply a function to each element in the array to reduce the array to a single value (which could be any thing such as string/number/object...).
 
 
 ### When to use?
