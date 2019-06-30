@@ -3,6 +3,7 @@
 ## Map
 
 The `map()` method is used to apply a function on every element in an array. A new array is then returned.
+The index argument is optional.
 
 ### When to use?
 **When you want to *transform* elements in an array** without messing with the original array.
@@ -17,7 +18,7 @@ let newArr = oldArr.map(function(value, index) {
 eg:
 ```js 
 let arr = [1,2,3,4]
-let newArr = arr.map(function(value,index) {
+let newArr = arr.map(function(value) {
   if (value % 2 === 0){
     return value * 2;
   } else {
@@ -31,7 +32,7 @@ What does newArr look like?
 ---
 ## Filter
 
-The `filter()` method returns a new array created from all elements that pass a certain test preformed on an original array.
+The `filter()` method returns a new array created from all elements that pass a certain test preformed on an original array. The index argument is optional.
 
 ### When to use?
 **When you want to *filter* out elements in an array**
@@ -42,7 +43,7 @@ let newArr = oldArr.filter(function(value, index) {
   return // expression that evaluates to true or false
   // function should return true or false
   // true means keep the element
-  // false means discard
+  // false means discard the element
 });
 ```
 
@@ -67,7 +68,7 @@ let data = [
   }
 ]
 
-let newArr = data.map(function(value,index) {
+let newArr = data.filter(function(value) {
   return value.population > 500000000
 });
 
