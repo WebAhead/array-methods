@@ -146,15 +146,6 @@ var arr = [
 ];
 ```
 
-### Challenge pt 4
-You have learned that you can map an array and square every element in it, e.g.:
-```js
-  return [1,2,3].map(function(element){
-    return element*element;
-  } // Would return [1,4,9]
-```
-Implement the same functionality with reduce
-
 ---
 
 ## For Each
@@ -172,7 +163,7 @@ array.forEach(function(element){
   console.log(element);
 });
 ```
-### Challenge pt 5
+### Challenge pt 4
 Use forEach to log an x amount of stars `*` where there's an x in the array, for example:
 ```js
 arr = [1,2,3,1];
