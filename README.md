@@ -12,7 +12,7 @@ The index argument is optional.
 ### Syntax
 
 ```js
-let newArr = oldArr.map(function (value, index) {
+const newArr = oldArr.map(function (value, index) {
   // return element to new Array
 });
 ```
@@ -20,8 +20,8 @@ let newArr = oldArr.map(function (value, index) {
 eg:
 
 ```js
-let arr = [1, 2, 3, 4];
-let newArr = arr.map(function (value) {
+const arr = [1, 2, 3, 4];
+const newArr = arr.map(function (value) {
   if (value % 2 === 0) {
     return value * 2;
   } else {
@@ -48,7 +48,7 @@ The `filter()` method returns a new array created from all elements that pass a 
 ### Syntax
 
 ```js
-let newArr = oldArr.filter(function (value, index) {
+const newArr = oldArr.filter(function (value, index) {
   return; // expression that evaluates to true or false
   // function should return true or false
   // true means keep the element
@@ -59,7 +59,7 @@ let newArr = oldArr.filter(function (value, index) {
 eg:
 
 ```js
-let data = [
+const data = [
   {
     country: "China",
     population: 1409517397,
@@ -78,7 +78,7 @@ let data = [
   },
 ];
 
-let newArr = data.filter(function (value) {
+const newArr = data.filter(function (value) {
   return value.population > 500000000;
 });
 
@@ -110,7 +110,7 @@ Normally one of the other methods will do for manipulating arrays/data. forEach 
 - nothing is returned, is used to **execute a function on each element**
 
 ```js
-var array = [1, 2, 3];
+const array = [1, 2, 3];
 array.forEach(function (element) {
   console.log(element);
 });
@@ -121,11 +121,12 @@ array.forEach(function (element) {
 Use forEach to log an x amount of stars `*` where there's an x in the array, for example:
 
 ```js
-arr = [1, 2, 3, 1];
+arr = [1, 2, 3, 2, 1];
 // would log
 // *
 // **
 // ***
+// **
 // *
 ```
 
@@ -146,7 +147,7 @@ This time the callback (function argument) function takes 4 arguments, the **acc
 As well as the callback as with forEach,map & filter, reduce also takes an initial value for the accumulator. If you do not pass an initial value the 0th element of the array is used.
 
 ```js
-let newArr = oldArr.reduce(function (accumulator, value, index) {
+const newArr = oldArr.reduce(function (accumulator, value, index) {
   // return the new value of the accumulator
 }, initValue);
 ```
@@ -154,9 +155,9 @@ let newArr = oldArr.reduce(function (accumulator, value, index) {
 eg:
 
 ```js
-let arr = [1, 2, 3, 4];
+const arr = [1, 2, 3, 4];
 
-let value = arr.reduce(function (accumulator, value) {
+const value = arr.reduce(function (accumulator, value) {
   return accumulator - value;
 }, 100);
 
@@ -174,7 +175,7 @@ Using the reduce() method, can we convert this array of countries and population
 
 ```js
 // The data to test the function
-let data = [
+const data = [
   {
     country: "China",
     pop: 1409517397,
@@ -212,7 +213,7 @@ Using reduce, calculate the sum of all sub-arrays
 for example, the sum of the following array would be 27:
 
 ```js
-var arr = [
+const arr = [
   [1, 2, 3],
   [1, 2, 3],
   [4, 5, 6],
