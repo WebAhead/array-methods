@@ -205,10 +205,6 @@ const data = [
 
 ### Challenge 3
 
-Using `Object.keys()` (look it up :D) and one of the other array methods, do the reverse of challenge 2. That is, convert your object of countries into an array that looks like `data` above.
-
-### Challenge 4
-
 Using reduce, calculate the sum of all sub-arrays
 for example, the sum of the following array would be 27:
 
